@@ -1,4 +1,4 @@
-package ControlStructure;
+package controlstructure;
 
 import java.util.Random;
 import java.util.Scanner;
