@@ -14,7 +14,7 @@ public class ExtraExercise {
         int attempt;
         do {
             attempt = s.nextInt();
-            System.out.print(resRandom % attempt == 0? "Good" : "Fail, repeat");
+            System.out.println(resRandom % attempt == 0? "Good" : "Fail, repeat");
         }while (!(resRandom % attempt == 0));
     }
 }
