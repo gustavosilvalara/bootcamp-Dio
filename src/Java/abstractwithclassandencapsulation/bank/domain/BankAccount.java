@@ -1,4 +1,4 @@
-package Java.abstractwithclassandencapsulation.bank.service;
+package Java.abstractwithclassandencapsulation.bank.domain;
 
 import Java.abstractwithclassandencapsulation.bank.metods.Metods;
 
@@ -76,11 +76,11 @@ public non-sealed class BankAccount extends CreateBankAccount implements Metods 
         }
     }
 
-    public double getUsingSpecialCheck() {
+    protected double getUsingSpecialCheck() {
         return usingSpecialCheck;
     }
 
-    public void setUsingSpecialCheck(double usingSpecialCheck) {
+    protected void setUsingSpecialCheck(double usingSpecialCheck) {
         this.usingSpecialCheck = usingSpecialCheck;
     }
 }

@@ -1,4 +1,4 @@
-package Java.abstractwithclassandencapsulation.bank.service;
+package Java.abstractwithclassandencapsulation.bank.domain;
 
 public sealed abstract class CreateBankAccount permits BankAccount {
     private final String name;
@@ -11,19 +11,19 @@ public sealed abstract class CreateBankAccount permits BankAccount {
         specialCheck = balance <= 500 ? 50.00 : balance * 0.50;
     }
 
-    public double getSpecialCheck() {
+    protected double getSpecialCheck() {
         return specialCheck;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public double getBalance() {
+    protected double getBalance() {
         return balance;
     }
 
-    public void setBalance(double balance) {
+    protected void setBalance(double balance) {
         this.balance = balance;
     }
 

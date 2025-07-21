@@ -1,6 +1,6 @@
 package Java.abstractwithclassandencapsulation.bank.test;
 
-import Java.abstractwithclassandencapsulation.bank.service.BankAccount;
+import Java.abstractwithclassandencapsulation.bank.domain.BankAccount;
 
 import java.util.Scanner;
 
@@ -20,7 +20,6 @@ public class TestCreateBank {
         firstDeposit = s.nextDouble();
 
         BankAccount bank = new BankAccount(name, firstDeposit);
-
 
 
         do {
