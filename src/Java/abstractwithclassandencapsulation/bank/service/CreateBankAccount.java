@@ -1,6 +1,6 @@
 package Java.abstractwithclassandencapsulation.bank.service;
 
-public abstract class CreateBankAccount {
+public sealed abstract class CreateBankAccount permits BankAccount {
     private final String name;
     private final double specialCheck;
     private double balance;

@@ -4,7 +4,7 @@ import Java.abstractwithclassandencapsulation.bank.metods.Metods;
 
 import java.text.DecimalFormat;
 
-public class BankAccount extends CreateBankAccount implements Metods {
+public non-sealed class BankAccount extends CreateBankAccount implements Metods {
 
     DecimalFormat df = new DecimalFormat("#0.00");
 
