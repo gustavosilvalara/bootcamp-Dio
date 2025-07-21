@@ -1,4 +1,4 @@
-package exploresyntaxandlogic;
+package Java.exploresyntaxandlogic;
 
 import java.util.Scanner;
 
