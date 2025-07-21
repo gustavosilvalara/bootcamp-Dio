@@ -21,7 +21,6 @@ public class TestCreateBank {
 
         BankAccount bank = new BankAccount(name, firstDeposit);
 
-        System.out.println();
         do {
 
             System.out.println("==================================================");
@@ -53,6 +52,8 @@ public class TestCreateBank {
                 System.out.println(bank.payBill(payBill));
             }
             if (option == 6) System.out.println(bank.checkingSpecialCheck());
+
+            System.out.println();
 
         }while (option != 0);
 
