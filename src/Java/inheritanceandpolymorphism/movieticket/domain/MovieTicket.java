@@ -8,9 +8,9 @@ public class MovieTicket {
 
     public MovieTicket(Movie movie) {
         this.movie = movie;
-        movieName = movie.getName();
-        movieValue = movie.getValue();
-        movieType = movie.getType();
+        movieName = movie.name();
+        movieValue = movie.value();
+        movieType = movie.type();
     }
 
     public void movieTicketPrice(){
