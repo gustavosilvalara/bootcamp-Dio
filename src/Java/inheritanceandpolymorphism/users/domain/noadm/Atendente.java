@@ -1,6 +1,8 @@
-package Java.inheritanceandpolymorphism.users.domain.adm;
+package Java.inheritanceandpolymorphism.users.domain.noadm;
 
-public class Atendente extends Funcionario{
+import Java.inheritanceandpolymorphism.users.domain.adm.Funcionario;
+
+public class Atendente extends Funcionario {
     public Atendente(String nome, String email, String senha) {
         super(nome, email, senha);
 
