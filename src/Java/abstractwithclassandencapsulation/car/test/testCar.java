@@ -9,7 +9,7 @@ public class testCar {
         Car car = new Car();
         Scanner s = new Scanner(System.in);
 
-        int option = -1;
+        int option;
 
         System.out.println("\"Enter the car\"");
 
