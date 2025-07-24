@@ -51,5 +51,6 @@ public class TestTaxCalculate {
             System.out.println("==================================================");
 
         } while (option != 0);
+
     }
 }
