@@ -17,5 +17,7 @@ public class Teste {
         System.out.println(ordenacaoNumeros.ordenarAscendente());
         System.out.println(ordenacaoNumeros.ordenarDescendente());
 
+
+
     }
 }
