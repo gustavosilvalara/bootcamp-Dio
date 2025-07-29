@@ -1,6 +1,6 @@
-package Java.collectionsandstream.listadetarefas.test;
+package Java.collectionsandstream.operacoesbasicascomlist.listadetarefas.test;
 
-import Java.collectionsandstream.listadetarefas.domain.ListaTarefas;
+import Java.collectionsandstream.operacoesbasicascomlist.listadetarefas.domain.ListaTarefas;
 
 public class Test {
     public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class Test {
 
         listaTarefas.adicionarTarefa("Estudar");
         listaTarefas.adicionarTarefa("Ler");
+        listaTarefas.adicionarTarefa("Estudar");
         System.out.println(listaTarefas.obterDescricoesTarefas());
         System.out.println(listaTarefas.obterNumeroTotalTarefas());
         listaTarefas.removerTarefa("Estudar");

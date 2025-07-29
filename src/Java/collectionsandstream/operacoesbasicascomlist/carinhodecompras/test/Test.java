@@ -1,6 +1,6 @@
-package Java.collectionsandstream.carinhodecompras.test;
+package Java.collectionsandstream.operacoesbasicascomlist.carinhodecompras.test;
 
-import Java.collectionsandstream.carinhodecompras.domain.CarrinhoDeCompras;
+import Java.collectionsandstream.operacoesbasicascomlist.carinhodecompras.domain.CarrinhoDeCompras;
 
 public class Test {
     public static void main(String[] args) {
@@ -9,6 +9,7 @@ public class Test {
         carrinhoDeCompras.adicionarItem("Maça", 10.05, 6);
         carrinhoDeCompras.adicionarItem("Azeite", 20.50, 1);
         carrinhoDeCompras.adicionarItem("Computador", 2000.99, 1);
+        carrinhoDeCompras.adicionarItem("Mouse", 50.89, 1);
         carrinhoDeCompras.adicionarItem("Mouse", 50.89, 1);
         System.out.println(carrinhoDeCompras.exibirItens());
         System.out.println(carrinhoDeCompras.calcularValorTotal());

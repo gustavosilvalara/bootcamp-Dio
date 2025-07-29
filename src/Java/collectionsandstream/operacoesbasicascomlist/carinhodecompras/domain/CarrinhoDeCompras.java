@@ -1,4 +1,4 @@
-package Java.collectionsandstream.carinhodecompras.domain;
+package Java.collectionsandstream.operacoesbasicascomlist.carinhodecompras.domain;
 
 import java.util.ArrayList;
 import java.util.List;
