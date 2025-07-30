@@ -1,7 +1,7 @@
-package Java.interfaceandlambdas.dominio.taxcalculate.test;
+package Java.interfaceandlambdas.taxcalculate.test;
 
-import Java.interfaceandlambdas.dominio.taxcalculate.domain.Product;
-import Java.interfaceandlambdas.dominio.taxcalculate.domain.Types;
+import Java.interfaceandlambdas.taxcalculate.domain.Product;
+import Java.interfaceandlambdas.taxcalculate.domain.Types;
 
 import java.util.Scanner;
 

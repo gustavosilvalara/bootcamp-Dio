@@ -1,4 +1,4 @@
-package Java.interfaceandlambdas.dominio.taxcalculate.domain;
+package Java.interfaceandlambdas.taxcalculate.domain;
 
 public class Product implements TaxCalculator {
     private String name;

@@ -1,4 +1,4 @@
-package Java.interfaceandlambdas.dominio.marketingmessage.domain;
+package Java.interfaceandlambdas.marketingmessage.domain;
 
 public class Email implements MarketingMessage{
     protected String email;

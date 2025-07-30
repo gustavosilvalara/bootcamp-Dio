@@ -1,9 +1,9 @@
-package Java.interfaceandlambdas.dominio.marketingmessage.test;
+package Java.interfaceandlambdas.marketingmessage.test;
 
-import Java.interfaceandlambdas.dominio.marketingmessage.domain.Email;
-import Java.interfaceandlambdas.dominio.marketingmessage.domain.Sms;
-import Java.interfaceandlambdas.dominio.marketingmessage.domain.SocialNetwork;
-import Java.interfaceandlambdas.dominio.marketingmessage.domain.Whatsapp;
+import Java.interfaceandlambdas.marketingmessage.domain.Email;
+import Java.interfaceandlambdas.marketingmessage.domain.Sms;
+import Java.interfaceandlambdas.marketingmessage.domain.SocialNetwork;
+import Java.interfaceandlambdas.marketingmessage.domain.Whatsapp;
 
 import java.util.Scanner;
 

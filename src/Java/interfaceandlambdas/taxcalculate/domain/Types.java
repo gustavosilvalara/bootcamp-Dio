@@ -1,4 +1,4 @@
-package Java.interfaceandlambdas.dominio.taxcalculate.domain;
+package Java.interfaceandlambdas.taxcalculate.domain;
 
 public enum Types {
     ALIMENTO(1),
