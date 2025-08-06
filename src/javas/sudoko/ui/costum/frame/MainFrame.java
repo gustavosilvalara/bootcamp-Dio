@@ -1,4 +1,4 @@
-package javas.sudoko.ui.frame;
+package javas.sudoko.ui.costum.frame;
 
 import javax.swing.*;
 import java.awt.*;
