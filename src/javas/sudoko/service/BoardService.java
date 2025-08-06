@@ -1,0 +1,54 @@
+package javas.sudoko.service;
+
+import javas.sudoko.model.Board;
+import javas.sudoko.model.GameStatusEnum;
+import javas.sudoko.model.Space;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class BoardService {
+
+    private static final int BOARD_LIMIT = 9;
+
+    private final Board board;
+
+    public BoardService(final Map<String, String> gameConfig){
+        this.board = new Board(initBoard(gameConfig));
+    }
+
+    public List<List<Space>> getSpaces(){
+        return board.getSpaces();
+    }
+
+    public void reset(){
+        board.reset();
+    }
+
+    public boolean hasErros(){
+        return board.hasErrors();
+    }
+
+    public GameStatusEnum getStatus(){
+        return board.getStats();
+    }
+
+    public boolean gameFinished(){
+        return board.gameIsFinished();
+    }
+
+    private List<List<Space>> initBoard(Map<String, String> gameConfig) {
+        List<List<Space>> spaces = new ArrayList<>();
+        for (int i = 0; i < BOARD_LIMIT; i++) {
+            spaces.add(new ArrayList<>());
+            for (int j = 0; j < BOARD_LIMIT; j++) {
+                String positionConfig = gameConfig.get("%s,%s,".formatted(i,j));
+                int expected = Integer.parseInt(positionConfig.split(",")[0]);
+                boolean fixed = Boolean.parseBoolean(positionConfig.split(",")[1]);
+                Space currentSpace = new Space(expected, fixed);
+                spaces.get(i).add(currentSpace);
+            }
+        }
+        return spaces;
+    }
+}
