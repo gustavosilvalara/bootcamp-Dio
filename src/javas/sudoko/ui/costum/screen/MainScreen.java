@@ -81,7 +81,7 @@ public class MainScreen {
         resetButton = new ResetButton(e -> {
             int dialogResult = JOptionPane.showConfirmDialog(null,
                     "Deseja realmente reiniciar o jogo?",
-                    "Limpar o jogo",
+                    "Limpar o jogo.",
                     YES_NO_OPTION,
                     QUESTION_MESSAGE);
             if (dialogResult == 0) {
@@ -101,7 +101,7 @@ public class MainScreen {
                 case INCOMPLETE -> "O jogo está incompleto!!";
                 case COMPLETE -> "O jogo está completo!!";
             };
-            message += hasErros ? " e contém erros" : " e não contem erros";
+            message += hasErros ? " e contém erros" : " e não contem erros.";
             JOptionPane.showMessageDialog(null, message);
         });
         mainPanel.add(checkGameStatusButton);
@@ -110,11 +110,11 @@ public class MainScreen {
     private void addFinishGame(final JPanel mainPanel) {
         finishGameButton = new FinishGameButton(e -> {
             if (boardService.gameFinished()) {
-                JOptionPane.showMessageDialog(null, "Parabens você concluiu o jogo");
+                JOptionPane.showMessageDialog(null, "Parabens você concluiu o jogo.");
                 resetButton.setEnabled(false);
                 finishGameButton.setEnabled(false);
             } else {
-                JOptionPane.showMessageDialog(null, "Seu jogo contém uma inconsistência, ajuste e tente novamente");
+                JOptionPane.showMessageDialog(null, "Seu jogo contém uma inconsistência, ajuste e tente novamente.");
             }
         });
 
